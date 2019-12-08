@@ -150,7 +150,7 @@ function claim2($token) {
 function claim3($token) {
     sleep(5);
     echo "SANTAI 08:";
-    $data3 = '{"promo_code":"GOFOODSANTAI08"}';
+    $data3 = '{"promo_code":"PESANGOFOODYUK"}';
     $claim3 = request("/go-promotions/v1/promotions/enrollments", $token, $data3);
     if ($claim3['success'] == 1) {
         return $claim3['data']['message'];
